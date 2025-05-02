@@ -5,6 +5,7 @@ from google import genai
 from dotenv import load_dotenv
 
 # Configuração da chave da API Gemini
+load_dotenv()
 api_key = os.getenv("GOOGLE_API_KEY")
 google_client = genai.Client(api_key=api_key)
 
